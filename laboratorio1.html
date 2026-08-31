@@ -18429,6 +18429,25 @@ Número de coeficientes: 11
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb112e57">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Se interpretaron los resultados de las pruebas de diagnóstico junto con los gráficos anteriores.</em></p>
+<ul>
+<li><strong>No colinealidad (VIF).</strong> Solo las variables de presión muestran VIF algo elevado (<code>presion_media</code> = 13.31, <code>presion_max</code> = 8.99, <code>presion_min</code> = 7.67); el resto está por debajo de 5. Es coherente con lo señalado en 8.1: esas cuatro variables están correlacionadas entre sí, así que basta con no interpretar sus coeficientes por separado.</li>
+<li><strong>Linealidad (Rainbow, p = 0.2997).</strong> No se rechaza: la relación entre las variables y la temperatura es adecuadamente lineal.</li>
+<li><strong>Normalidad (Shapiro-Wilk, p = 9.89×10⁻¹²).</strong> La prueba la rechaza formalmente, pero con el tamaño de muestra del conjunto de prueba, Shapiro-Wilk detecta incluso desviaciones mínimas; el histograma y el Q-Q muestran una distribución cercana a la normal, con colas apenas un poco más pesadas. No afecta las predicciones, solo pide algo de cautela con los intervalos de confianza de los coeficientes.</li>
+<li><strong>Homocedasticidad (Breusch-Pagan, p = 0.1740).</strong> No se rechaza: la varianza de los errores es estable.</li>
+<li><strong>Independencia (Durbin-Watson = 2.0096).</strong> Prácticamente el valor ideal: no hay autocorrelación.</li>
+</ul>
+<p><strong>Balance.</strong> El modelo cumple con holgura cuatro de los cinco supuestos, y el quinto (normalidad) se aparta solo levemente y de forma esperable dado el tamaño de la muestra. En conjunto, respaldan al Modelo B como una regresión lineal razonablemente bien especificada.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4820a7cd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
